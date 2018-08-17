@@ -1,0 +1,1 @@
+- Contains XSS utilities that are not specific to Django or Mako templates.

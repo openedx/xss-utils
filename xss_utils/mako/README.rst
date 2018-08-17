@@ -1,0 +1,1 @@
+- Contains XSS utilities specific to Mako Templates. Mako templates use the MarkupSafe library.
