@@ -4,5 +4,5 @@
 #
 #    make upgrade
 #
-django==1.11.15
-pytz==2018.5              # via django
+django==1.11.21
+pytz==2019.1              # via django
