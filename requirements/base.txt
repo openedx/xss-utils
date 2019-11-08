@@ -5,3 +5,4 @@
 #    make upgrade
 #
 django==1.11.26
+pytz==2019.3              # via django
