@@ -8,6 +8,7 @@ from django.test import TestCase
 
 
 class InterpolateHtmlFilterTest(TestCase):
+    """ Class for interpolate_html filter escaping """
     def test_interpolate_html_escape_rendered(self):
         """ Verify interpolate_html filter escapes string with kwargs """
         context = Context({})
