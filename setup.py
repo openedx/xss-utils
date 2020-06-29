@@ -6,8 +6,6 @@
 """
 Package metadata for xss_utils.
 """
-from __future__ import absolute_import, print_function
-
 import os
 import re
 import sys
