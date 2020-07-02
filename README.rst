@@ -9,8 +9,7 @@ Overview
 This repo houses utility functions to protect edx codebase (Python, Javascript and other templating
 engine eg django/mako) against possible XSS attacks. Helper code include html & js escaping filters
 for django and mako templates.
-For more information, please read the Best Practices Preventing XSS.
-https://openedx.atlassian.net/wiki/spaces/SEC/pages/99090697/Best+Practices+for+Preventing+XSS
+For more information, please read `Preventing Cross Site Scripting Vulnerabilities <https://edx.readthedocs.io/projects/edx-developer-guide/en/latest/preventing_xss/index.html>`_.
 
 Documentation
 -------------
