@@ -29,7 +29,7 @@ pylint==2.4.4             # via edx-lint, pylint-celery, pylint-django, pylint-p
 pyparsing==2.4.7          # via -r requirements/test.txt, packaging
 pytest-cov==2.10.1        # via -r requirements/test.txt
 pytest-django==3.10.0     # via -r requirements/test.txt
-pytest==6.1.0             # via -r requirements/test.txt, pytest-cov, pytest-django
+pytest==6.1.1             # via -r requirements/test.txt, pytest-cov, pytest-django
 pytz==2020.1              # via -r requirements/test.txt, django
 six==1.15.0               # via -r requirements/test.txt, astroid, edx-lint, packaging, pathlib2
 snowballstemmer==2.0.0    # via pydocstyle

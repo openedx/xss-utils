@@ -30,7 +30,7 @@ pygments==2.7.1           # via doc8, readme-renderer, sphinx
 pyparsing==2.4.7          # via -r requirements/test.txt, packaging
 pytest-cov==2.10.1        # via -r requirements/test.txt
 pytest-django==3.10.0     # via -r requirements/test.txt
-pytest==6.1.0             # via -r requirements/test.txt, pytest-cov, pytest-django
+pytest==6.1.1             # via -r requirements/test.txt, pytest-cov, pytest-django
 pytz==2020.1              # via -r requirements/test.txt, babel, django
 readme-renderer==26.0     # via -r requirements/doc.in
 requests==2.24.0          # via sphinx
