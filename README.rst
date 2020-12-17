@@ -59,9 +59,9 @@ refer to this `list of resources`_ if you need any assistance.
     :target: https://pypi.python.org/pypi/xss-utils/
     :alt: PyPI
 
-.. |travis-badge| image:: https://travis-ci.org/edx/xss-utils.svg?branch=master
-    :target: https://travis-ci.org/edx/xss-utils
-    :alt: Travis
+.. |ci-badge| image:: https://github.com/edx/xss-utils/workflows/Python%20CI/badge.svg?branch=master
+    :target: https://github.com/edx/xss-utils/actions?query=workflow%3A%22Python+CI%22
+    :alt: CI
 
 .. |codecov-badge| image:: http://codecov.io/github/edx/xss-utils/coverage.svg?branch=master
     :target: http://codecov.io/github/edx/xss-utils?branch=master
