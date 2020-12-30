@@ -16,7 +16,7 @@ pyparsing==2.4.7          # via packaging
 pytest-cov==2.10.1        # via -r requirements/test.in
 pytest-django==4.1.0      # via -r requirements/test.in
 pytest==6.1.2             # via pytest-cov, pytest-django
-pytz==2020.4              # via -r requirements/base.txt, django
+pytz==2020.5              # via -r requirements/base.txt, django
 six==1.15.0               # via pathlib2
 sqlparse==0.4.1           # via -r requirements/base.txt, django
 toml==0.10.2              # via pytest
