@@ -30,7 +30,7 @@ pyparsing==2.4.7          # via -r requirements/test.txt, packaging
 pytest-cov==2.10.1        # via -r requirements/test.txt
 pytest-django==4.1.0      # via -r requirements/test.txt
 pytest==6.1.2             # via -r requirements/test.txt, pytest-cov, pytest-django
-pytz==2020.4              # via -r requirements/test.txt, django
+pytz==2020.5              # via -r requirements/test.txt, django
 six==1.15.0               # via -r requirements/test.txt, astroid, edx-lint, pathlib2
 snowballstemmer==2.0.0    # via pydocstyle
 sqlparse==0.4.1           # via -r requirements/test.txt, django
