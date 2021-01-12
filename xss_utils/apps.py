@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 xss_utils Django application initialization.
 """
