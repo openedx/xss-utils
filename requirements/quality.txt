@@ -28,11 +28,17 @@ django==2.2.17
     #   -r requirements/test.txt
 edx-lint==1.6
     # via -r requirements/quality.in
+importlib-metadata==1.7.0
+    # via
+    #   -c requirements/constraints.txt
+    #   -r requirements/test.txt
+    #   pluggy
+    #   pytest
 iniconfig==1.1.1
     # via
     #   -r requirements/test.txt
     #   pytest
-isort==5.7.0
+isort==4.3.21
     # via
     #   -r requirements/quality.in
     #   pylint
@@ -41,6 +47,10 @@ lazy-object-proxy==1.4.3
 mccabe==0.6.1
     # via pylint
 packaging==20.8
+    # via
+    #   -r requirements/test.txt
+    #   pytest
+pathlib2==2.3.5
     # via
     #   -r requirements/test.txt
     #   pytest
@@ -78,7 +88,7 @@ pytest-cov==2.10.1
     # via -r requirements/test.txt
 pytest-django==4.1.0
     # via -r requirements/test.txt
-pytest==6.2.1
+pytest==6.1.2
     # via
     #   -r requirements/test.txt
     #   pytest-cov
@@ -89,8 +99,10 @@ pytz==2020.5
     #   django
 six==1.15.0
     # via
+    #   -r requirements/test.txt
     #   astroid
     #   edx-lint
+    #   pathlib2
 snowballstemmer==2.0.0
     # via pydocstyle
 sqlparse==0.4.1
@@ -102,5 +114,11 @@ toml==0.10.2
     #   -r requirements/test.txt
     #   pylint
     #   pytest
+typed-ast==1.4.2
+    # via astroid
 wrapt==1.12.1
     # via astroid
+zipp==1.2.0
+    # via
+    #   -r requirements/test.txt
+    #   importlib-metadata
