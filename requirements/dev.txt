@@ -68,13 +68,28 @@ idna==2.10
     # via
     #   -r requirements/ci.txt
     #   requests
-inflect==5.0.2
+importlib-metadata==1.7.0
+    # via
+    #   -c requirements/constraints.txt
+    #   -r requirements/ci.txt
+    #   -r requirements/quality.txt
+    #   inflect
+    #   path
+    #   pluggy
+    #   pytest
+    #   tox
+    #   virtualenv
+importlib-resources==3.2.1
+    # via
+    #   -r requirements/ci.txt
+    #   virtualenv
+inflect==3.0.2
     # via jinja2-pluralize
 iniconfig==1.1.1
     # via
     #   -r requirements/quality.txt
     #   pytest
-isort==5.7.0
+isort==4.3.21
     # via
     #   -r requirements/quality.txt
     #   pylint
@@ -102,8 +117,12 @@ packaging==20.8
     #   tox
 path.py==12.5.0
     # via edx-i18n-tools
-path==15.0.1
+path==13.1.0
     # via path.py
+pathlib2==2.3.5
+    # via
+    #   -r requirements/quality.txt
+    #   pytest
 pip-tools==5.5.0
     # via -r requirements/pip-tools.txt
 pluggy==0.13.1
@@ -125,7 +144,7 @@ pycodestyle==2.6.0
     # via -r requirements/quality.txt
 pydocstyle==5.1.1
     # via -r requirements/quality.txt
-pygments==2.7.3
+pygments==2.7.4
     # via diff-cover
 pylint-celery==0.3
     # via
@@ -156,7 +175,7 @@ pytest-cov==2.10.1
     # via -r requirements/quality.txt
 pytest-django==4.1.0
     # via -r requirements/quality.txt
-pytest==6.2.1
+pytest==6.1.2
     # via
     #   -r requirements/quality.txt
     #   pytest-cov
@@ -178,6 +197,7 @@ six==1.15.0
     #   astroid
     #   edx-i18n-tools
     #   edx-lint
+    #   pathlib2
     #   tox
     #   virtualenv
 snowballstemmer==2.0.0
@@ -201,6 +221,10 @@ tox==3.21.0
     # via
     #   -r requirements/ci.txt
     #   tox-battery
+typed-ast==1.4.2
+    # via
+    #   -r requirements/quality.txt
+    #   astroid
 urllib3==1.26.2
     # via
     #   -r requirements/ci.txt
@@ -213,6 +237,12 @@ wrapt==1.12.1
     # via
     #   -r requirements/quality.txt
     #   astroid
+zipp==1.2.0
+    # via
+    #   -r requirements/ci.txt
+    #   -r requirements/quality.txt
+    #   importlib-metadata
+    #   importlib-resources
 
 # The following packages are considered to be unsafe in a requirements file:
 # pip
