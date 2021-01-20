@@ -36,7 +36,7 @@ docutils==0.16
     #   readme-renderer
     #   restructuredtext-lint
     #   sphinx
-edx-sphinx-theme==1.6.0
+edx-sphinx-theme==1.6.1
     # via -r requirements/doc.in
 idna==2.10
     # via requests
@@ -85,7 +85,7 @@ pyparsing==2.4.7
     # via
     #   -r requirements/test.txt
     #   packaging
-pytest-cov==2.10.1
+pytest-cov==2.11.0
     # via -r requirements/test.txt
 pytest-django==4.1.0
     # via -r requirements/test.txt
