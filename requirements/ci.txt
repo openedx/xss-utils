@@ -12,7 +12,7 @@ chardet==4.0.0
     # via requests
 codecov==2.1.11
     # via -r requirements/ci.in
-coverage==5.3.1
+coverage==5.4
     # via codecov
 distlib==0.3.1
     # via virtualenv
@@ -22,14 +22,6 @@ filelock==3.0.12
     #   virtualenv
 idna==2.10
     # via requests
-importlib-metadata==1.7.0
-    # via
-    #   -c requirements/constraints.txt
-    #   pluggy
-    #   tox
-    #   virtualenv
-importlib-resources==3.2.1
-    # via virtualenv
 packaging==20.8
     # via tox
 pluggy==0.13.1
@@ -52,11 +44,7 @@ tox==3.21.2
     # via
     #   -r requirements/ci.in
     #   tox-battery
-urllib3==1.26.2
+urllib3==1.26.3
     # via requests
 virtualenv==20.4.0
     # via tox
-zipp==1.2.0
-    # via
-    #   importlib-metadata
-    #   importlib-resources
