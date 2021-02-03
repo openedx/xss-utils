@@ -13,7 +13,7 @@ coverage==5.4
     #   -r requirements/base.txt
 iniconfig==1.1.1
     # via pytest
-packaging==20.8
+packaging==20.9
     # via pytest
 pluggy==0.13.1
     # via pytest
@@ -29,7 +29,7 @@ pytest==6.2.2
     # via
     #   pytest-cov
     #   pytest-django
-pytz==2020.5
+pytz==2021.1
     # via
     #   -r requirements/base.txt
     #   django
