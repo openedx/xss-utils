@@ -31,7 +31,7 @@ django==2.2.18
     #   -r requirements/test.txt
     #   code-annotations
     #   edx-lint
-edx-lint==4.0.0
+edx-lint==4.0.1
     # via -r requirements/quality.in
 iniconfig==1.1.1
     # via

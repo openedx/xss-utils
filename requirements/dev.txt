@@ -65,7 +65,7 @@ django==2.2.18
     #   edx-lint
 edx-i18n-tools==0.5.3
     # via -r requirements/dev.in
-edx-lint==4.0.0
+edx-lint==4.0.1
     # via -r requirements/quality.txt
 filelock==3.0.12
     # via
