@@ -141,7 +141,7 @@ pycodestyle==2.6.0
     # via -r requirements/quality.txt
 pydocstyle==5.1.1
     # via -r requirements/quality.txt
-pygments==2.7.4
+pygments==2.8.0
     # via diff-cover
 pylint-celery==0.3
     # via
@@ -156,7 +156,7 @@ pylint-plugin-utils==0.6
     #   -r requirements/quality.txt
     #   pylint-celery
     #   pylint-django
-pylint==2.6.0
+pylint==2.6.2
     # via
     #   -r requirements/quality.txt
     #   edx-lint
@@ -228,7 +228,7 @@ toml==0.10.2
     #   tox
 tox-battery==0.6.1
     # via -r requirements/ci.txt
-tox==3.21.4
+tox==3.22.0
     # via
     #   -r requirements/ci.txt
     #   tox-battery
