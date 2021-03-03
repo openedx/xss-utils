@@ -20,7 +20,7 @@ chardet==4.0.0
     # via
     #   doc8
     #   requests
-coverage==5.4
+coverage==5.5
     # via
     #   -r requirements/test.txt
     #   pytest-cov
