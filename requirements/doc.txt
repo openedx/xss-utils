@@ -66,7 +66,7 @@ py==1.10.0
     # via
     #   -r requirements/test.txt
     #   pytest
-pygments==2.8.0
+pygments==2.8.1
     # via
     #   doc8
     #   readme-renderer
@@ -103,7 +103,7 @@ six==1.15.0
     #   readme-renderer
 snowballstemmer==2.1.0
     # via sphinx
-sphinx==3.5.1
+sphinx==3.5.2
     # via
     #   -r requirements/doc.in
     #   edx-sphinx-theme
