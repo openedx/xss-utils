@@ -129,7 +129,7 @@ toml==0.10.2
     # via
     #   -r requirements/test.txt
     #   pytest
-urllib3==1.26.3
+urllib3==1.26.4
     # via requests
 webencodings==0.5.1
     # via bleach
