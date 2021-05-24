@@ -30,16 +30,15 @@ click-log==0.3.2
     # via
     #   -r requirements/quality.txt
     #   edx-lint
-click==7.1.2
+click==8.0.1
     # via
-    #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/pip-tools.txt
     #   -r requirements/quality.txt
     #   click-log
     #   code-annotations
     #   edx-lint
     #   pip-tools
-code-annotations==1.1.1
+code-annotations==1.1.2
     # via
     #   -r requirements/quality.txt
     #   edx-lint
@@ -61,7 +60,6 @@ django==2.2.23
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/quality.txt
-    #   code-annotations
     #   edx-i18n-tools
     #   edx-lint
 edx-i18n-tools==0.5.3
@@ -89,9 +87,8 @@ isort==5.8.0
     #   pylint
 jinja2-pluralize==0.3.0
     # via diff-cover
-jinja2==2.11.3
+jinja2==3.0.1
     # via
-    #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/quality.txt
     #   code-annotations
     #   diff-cover
@@ -100,9 +97,8 @@ lazy-object-proxy==1.6.0
     # via
     #   -r requirements/quality.txt
     #   astroid
-markupsafe==1.1.1
+markupsafe==2.0.1
     # via
-    #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/quality.txt
     #   jinja2
 mccabe==0.6.1
