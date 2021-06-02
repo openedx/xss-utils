@@ -20,7 +20,7 @@ chardet==4.0.0
     # via
     #   doc8
     #   requests
-coverage[toml]==5.5
+coverage==5.5
     # via
     #   -r requirements/test.txt
     #   pytest-cov
@@ -76,7 +76,7 @@ pyparsing==2.4.7
     # via
     #   -r requirements/test.txt
     #   packaging
-pytest-cov==2.12.0
+pytest-cov==2.12.1
     # via -r requirements/test.txt
 pytest-django==4.3.0
     # via -r requirements/test.txt
@@ -129,8 +129,8 @@ stevedore==3.3.0
 toml==0.10.2
     # via
     #   -r requirements/test.txt
-    #   coverage
     #   pytest
+    #   pytest-cov
 urllib3==1.26.5
     # via requests
 webencodings==0.5.1
