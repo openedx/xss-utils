@@ -50,7 +50,7 @@ coverage==5.5
     #   -r requirements/quality.txt
     #   codecov
     #   pytest-cov
-diff-cover==5.1.2
+diff-cover==5.2.0
     # via -r requirements/dev.in
 distlib==0.3.2
     # via
