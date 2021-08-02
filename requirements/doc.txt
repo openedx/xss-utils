@@ -16,7 +16,7 @@ bleach==3.3.1
     # via readme-renderer
 certifi==2021.5.30
     # via requests
-charset-normalizer==2.0.3
+charset-normalizer==2.0.4
     # via requests
 coverage==5.5
     # via
@@ -100,7 +100,7 @@ six==1.16.0
     #   readme-renderer
 snowballstemmer==2.1.0
     # via sphinx
-sphinx==4.1.1
+sphinx==4.1.2
     # via
     #   -r requirements/doc.in
     #   edx-sphinx-theme
