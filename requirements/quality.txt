@@ -58,6 +58,7 @@ platformdirs==2.2.0
     # via pylint
 pluggy==0.13.1
     # via
+    #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/test.txt
     #   pytest
 py==1.10.0
