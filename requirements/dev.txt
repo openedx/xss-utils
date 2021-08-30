@@ -51,7 +51,7 @@ coverage==5.5
     #   -r requirements/quality.txt
     #   codecov
     #   pytest-cov
-diff-cover==6.3.3
+diff-cover==6.3.5
     # via -r requirements/dev.in
 distlib==0.3.2
     # via
@@ -132,6 +132,7 @@ platformdirs==2.2.0
     #   virtualenv
 pluggy==0.13.1
     # via
+    #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/ci.txt
     #   -r requirements/quality.txt
     #   diff-cover

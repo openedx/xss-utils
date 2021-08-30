@@ -16,7 +16,9 @@ iniconfig==1.1.1
 packaging==21.0
     # via pytest
 pluggy==0.13.1
-    # via pytest
+    # via
+    #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
+    #   pytest
 py==1.10.0
     # via pytest
 pyparsing==2.4.7
