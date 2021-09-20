@@ -62,7 +62,7 @@ VERSION = get_version('xss_utils', '__init__.py')
 
 if sys.argv[-1] == 'tag':
     print("Tagging the version on github:")
-    os.system("git tag -a %s -m 'version %s'" % (VERSION, VERSION))
+    os.system("git tag -a %s -m 'version %s'" % (VERSION, VERSION))  # pylint: disable=consider-using-f-string
     os.system("git push --tags")
     sys.exit()
 
