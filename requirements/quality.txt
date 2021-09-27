@@ -29,7 +29,7 @@ django==2.2.24
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/test.txt
-edx-lint==5.1.0
+edx-lint==5.2.0
     # via -r requirements/quality.in
 iniconfig==1.1.1
     # via
@@ -53,7 +53,7 @@ packaging==21.0
     #   pytest
 pbr==5.6.0
     # via stevedore
-platformdirs==2.3.0
+platformdirs==2.4.0
     # via pylint
 pluggy==1.0.0
     # via
