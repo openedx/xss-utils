@@ -45,7 +45,7 @@ code-annotations==1.2.0
     #   edx-lint
 codecov==2.1.12
     # via -r requirements/ci.txt
-coverage==5.5
+coverage[toml]==6.0
     # via
     #   -r requirements/ci.txt
     #   -r requirements/quality.txt
@@ -68,7 +68,7 @@ edx-i18n-tools==0.7.0
     # via -r requirements/dev.in
 edx-lint==5.2.0
     # via -r requirements/quality.txt
-filelock==3.0.12
+filelock==3.3.0
     # via
     #   -r requirements/ci.txt
     #   tox
@@ -182,7 +182,7 @@ pytest==6.2.5
     #   -r requirements/quality.txt
     #   pytest-cov
     #   pytest-django
-pytest-cov==2.12.1
+pytest-cov==3.0.0
     # via -r requirements/quality.txt
 pytest-django==4.4.0
     # via -r requirements/quality.txt
@@ -190,7 +190,7 @@ python-slugify==5.0.2
     # via
     #   -r requirements/quality.txt
     #   code-annotations
-pytz==2021.1
+pytz==2021.3
     # via
     #   -r requirements/quality.txt
     #   django
@@ -233,11 +233,12 @@ toml==0.10.2
     #   -r requirements/quality.txt
     #   pylint
     #   pytest
-    #   pytest-cov
     #   tox
 tomli==1.2.1
     # via
     #   -r requirements/pip-tools.txt
+    #   -r requirements/quality.txt
+    #   coverage
     #   pep517
 tox==3.24.4
     # via
