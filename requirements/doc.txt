@@ -16,9 +16,9 @@ bleach==4.1.0
     # via readme-renderer
 certifi==2021.10.8
     # via requests
-charset-normalizer==2.0.6
+charset-normalizer==2.0.7
     # via requests
-coverage[toml]==6.0.1
+coverage[toml]==6.0.2
     # via
     #   -r requirements/test.txt
     #   pytest-cov
@@ -36,7 +36,7 @@ docutils==0.17.1
     #   sphinx
 edx-sphinx-theme==3.0.0
     # via -r requirements/doc.in
-idna==3.2
+idna==3.3
     # via requests
 imagesize==1.2.0
     # via sphinx
