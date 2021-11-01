@@ -6,20 +6,20 @@
 #
 attrs==21.2.0
     # via pytest
-coverage[toml]==6.0.2
+coverage[toml]==6.1.1
     # via pytest-cov
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/base.txt
 iniconfig==1.1.1
     # via pytest
-packaging==21.0
+packaging==21.2
     # via pytest
 pluggy==1.0.0
     # via pytest
 py==1.10.0
     # via pytest
-pyparsing==3.0.1
+pyparsing==2.4.7
     # via packaging
 pytest==6.2.5
     # via
@@ -39,5 +39,5 @@ sqlparse==0.4.2
     #   django
 toml==0.10.2
     # via pytest
-tomli==1.2.1
+tomli==1.2.2
     # via coverage
