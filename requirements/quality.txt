@@ -35,7 +35,7 @@ iniconfig==1.1.1
     # via
     #   -r requirements/test.txt
     #   pytest
-isort==5.9.3
+isort==5.10.0
     # via
     #   -r requirements/quality.in
     #   pylint
@@ -51,7 +51,7 @@ packaging==21.2
     # via
     #   -r requirements/test.txt
     #   pytest
-pbr==5.6.0
+pbr==5.7.0
     # via stevedore
 platformdirs==2.4.0
     # via pylint
@@ -59,7 +59,7 @@ pluggy==1.0.0
     # via
     #   -r requirements/test.txt
     #   pytest
-py==1.10.0
+py==1.11.0
     # via
     #   -r requirements/test.txt
     #   pytest
