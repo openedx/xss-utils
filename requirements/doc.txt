@@ -54,13 +54,13 @@ packaging==21.2
     #   bleach
     #   pytest
     #   sphinx
-pbr==5.6.0
+pbr==5.7.0
     # via stevedore
 pluggy==1.0.0
     # via
     #   -r requirements/test.txt
     #   pytest
-py==1.10.0
+py==1.11.0
     # via
     #   -r requirements/test.txt
     #   pytest
