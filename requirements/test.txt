@@ -10,7 +10,7 @@ asgiref==3.5.0
     #   django
 attrs==21.4.0
     # via pytest
-coverage[toml]==6.3
+coverage[toml]==6.3.1
     # via pytest-cov
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
@@ -25,7 +25,7 @@ py==1.11.0
     # via pytest
 pyparsing==3.0.7
     # via packaging
-pytest==6.2.5
+pytest==7.0.0
     # via
     #   pytest-cov
     #   pytest-django
@@ -41,7 +41,7 @@ sqlparse==0.4.2
     # via
     #   -r requirements/base.txt
     #   django
-toml==0.10.2
-    # via pytest
 tomli==2.0.0
-    # via coverage
+    # via
+    #   coverage
+    #   pytest
