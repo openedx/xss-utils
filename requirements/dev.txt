@@ -106,7 +106,7 @@ packaging==21.3
     #   -r requirements/quality.txt
     #   pytest
     #   tox
-path==16.3.0
+path==16.4.0
     # via edx-i18n-tools
 pbr==5.8.1
     # via
@@ -179,7 +179,7 @@ pytest-cov==3.0.0
     # via -r requirements/quality.txt
 pytest-django==4.5.2
     # via -r requirements/quality.txt
-python-slugify==6.0.1
+python-slugify==6.1.1
     # via
     #   -r requirements/quality.txt
     #   code-annotations
@@ -247,7 +247,7 @@ urllib3==1.26.8
     # via
     #   -r requirements/ci.txt
     #   requests
-virtualenv==20.13.1
+virtualenv==20.13.2
     # via
     #   -r requirements/ci.txt
     #   tox
