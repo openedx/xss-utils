@@ -93,7 +93,7 @@ pytz==2021.3
     #   -r requirements/test.txt
     #   babel
     #   django
-readme-renderer==32.0
+readme-renderer==33.0
     # via -r requirements/doc.in
 requests==2.27.1
     # via sphinx
