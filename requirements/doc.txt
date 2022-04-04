@@ -30,7 +30,7 @@ django==3.2.12
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/test.txt
-doc8==0.10.1
+doc8==0.11.1
     # via -r requirements/doc.in
 docutils==0.17.1
     # via
@@ -136,5 +136,5 @@ urllib3==1.26.9
     # via requests
 webencodings==0.5.1
     # via bleach
-zipp==3.7.0
+zipp==3.8.0
     # via importlib-metadata

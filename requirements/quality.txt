@@ -16,7 +16,7 @@ attrs==21.4.0
     # via
     #   -r requirements/test.txt
     #   pytest
-click==8.0.4
+click==8.1.2
     # via
     #   click-log
     #   code-annotations
@@ -73,7 +73,7 @@ pycodestyle==2.8.0
     # via -r requirements/quality.in
 pydocstyle==6.1.1
     # via -r requirements/quality.in
-pylint==2.13.2
+pylint==2.13.4
     # via
     #   edx-lint
     #   pylint-celery
