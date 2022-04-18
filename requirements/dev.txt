@@ -51,7 +51,7 @@ coverage[toml]==6.3.2
     #   -r requirements/quality.txt
     #   codecov
     #   pytest-cov
-diff-cover==6.4.5
+diff-cover==6.5.0
     # via -r requirements/dev.in
 dill==0.3.4
     # via
@@ -61,7 +61,7 @@ distlib==0.3.4
     # via
     #   -r requirements/ci.txt
     #   virtualenv
-django==3.2.12
+django==3.2.13
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/quality.txt
@@ -235,13 +235,13 @@ tomli==2.0.1
     #   pep517
     #   pylint
     #   pytest
-tox==3.24.5
+tox==3.25.0
     # via
     #   -r requirements/ci.txt
     #   tox-battery
 tox-battery==0.6.1
     # via -r requirements/ci.txt
-typing-extensions==4.1.1
+typing-extensions==4.2.0
     # via
     #   -r requirements/quality.txt
     #   astroid
@@ -250,7 +250,7 @@ urllib3==1.26.9
     # via
     #   -r requirements/ci.txt
     #   requests
-virtualenv==20.14.0
+virtualenv==20.14.1
     # via
     #   -r requirements/ci.txt
     #   tox
