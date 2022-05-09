@@ -8,7 +8,7 @@ asgiref==3.5.1
     # via
     #   -r requirements/quality.txt
     #   django
-astroid==2.11.3
+astroid==2.11.4
     # via
     #   -r requirements/quality.txt
     #   pylint
@@ -112,7 +112,7 @@ packaging==21.3
     #   tox
 path==16.4.0
     # via edx-i18n-tools
-pbr==5.8.1
+pbr==5.9.0
     # via
     #   -r requirements/quality.txt
     #   stevedore
@@ -149,7 +149,7 @@ pydocstyle==6.1.1
     # via -r requirements/quality.txt
 pygments==2.12.0
     # via diff-cover
-pylint==2.13.7
+pylint==2.13.8
     # via
     #   -r requirements/quality.txt
     #   edx-lint
@@ -258,7 +258,7 @@ wheel==0.37.1
     # via
     #   -r requirements/pip-tools.txt
     #   pip-tools
-wrapt==1.14.0
+wrapt==1.14.1
     # via
     #   -r requirements/quality.txt
     #   astroid
