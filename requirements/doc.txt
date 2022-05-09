@@ -59,7 +59,7 @@ packaging==21.3
     #   -r requirements/test.txt
     #   pytest
     #   sphinx
-pbr==5.8.1
+pbr==5.9.0
     # via stevedore
 pluggy==1.0.0
     # via
