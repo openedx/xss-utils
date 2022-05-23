@@ -4,13 +4,13 @@
 #
 #    make upgrade
 #
-asgiref==3.5.1
+asgiref==3.5.2
     # via
     #   -r requirements/base.txt
     #   django
 attrs==21.4.0
     # via pytest
-coverage[toml]==6.3.3
+coverage[toml]==6.4
     # via pytest-cov
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
