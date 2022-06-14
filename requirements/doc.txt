@@ -94,7 +94,7 @@ pytz==2022.1
     #   django
 readme-renderer==35.0
     # via -r requirements/doc.in
-requests==2.27.1
+requests==2.28.0
     # via sphinx
 restructuredtext-lint==1.4.0
     # via doc8

@@ -35,7 +35,7 @@ django==3.2.13
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/test.txt
-edx-lint==5.2.2
+edx-lint==5.2.4
     # via -r requirements/quality.in
 iniconfig==1.1.1
     # via
