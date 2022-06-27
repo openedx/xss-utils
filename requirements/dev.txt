@@ -21,7 +21,7 @@ certifi==2022.6.15
     # via
     #   -r requirements/ci.txt
     #   requests
-chardet==4.0.0
+chardet==5.0.0
     # via diff-cover
 charset-normalizer==2.0.12
     # via
@@ -51,7 +51,7 @@ coverage[toml]==6.4.1
     #   -r requirements/quality.txt
     #   codecov
     #   pytest-cov
-diff-cover==6.5.0
+diff-cover==6.5.1
     # via -r requirements/dev.in
 dill==0.3.5.1
     # via
@@ -254,7 +254,7 @@ urllib3==1.26.9
     # via
     #   -r requirements/ci.txt
     #   requests
-virtualenv==20.14.1
+virtualenv==20.15.0
     # via
     #   -r requirements/ci.txt
     #   tox
