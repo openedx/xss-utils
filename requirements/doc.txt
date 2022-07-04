@@ -16,11 +16,11 @@ attrs==21.4.0
     #   pytest
 babel==2.10.3
     # via sphinx
-bleach==5.0.0
+bleach==5.0.1
     # via readme-renderer
 certifi==2022.6.15
     # via requests
-charset-normalizer==2.0.12
+charset-normalizer==2.1.0
     # via requests
 coverage[toml]==6.4.1
     # via
@@ -42,7 +42,7 @@ edx-sphinx-theme==3.0.0
     # via -r requirements/doc.in
 idna==3.3
     # via requests
-imagesize==1.3.0
+imagesize==1.4.1
     # via sphinx
 importlib-metadata==4.12.0
     # via sphinx
@@ -94,7 +94,7 @@ pytz==2022.1
     #   django
 readme-renderer==35.0
     # via -r requirements/doc.in
-requests==2.28.0
+requests==2.28.1
     # via sphinx
 restructuredtext-lint==1.4.0
     # via doc8
