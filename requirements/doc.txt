@@ -22,11 +22,11 @@ certifi==2022.6.15
     # via requests
 charset-normalizer==2.1.0
     # via requests
-coverage[toml]==6.4.1
+coverage[toml]==6.4.2
     # via
     #   -r requirements/test.txt
     #   pytest-cov
-django==3.2.13
+django==3.2.14
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/test.txt
@@ -124,16 +124,16 @@ sqlparse==0.4.2
     # via
     #   -r requirements/test.txt
     #   django
-stevedore==3.5.0
+stevedore==4.0.0
     # via doc8
 tomli==2.0.1
     # via
     #   -r requirements/test.txt
     #   coverage
     #   pytest
-urllib3==1.26.9
+urllib3==1.26.10
     # via requests
 webencodings==0.5.1
     # via bleach
-zipp==3.8.0
+zipp==3.8.1
     # via importlib-metadata
