@@ -10,7 +10,7 @@ asgiref==3.5.2
     # via
     #   -r requirements/test.txt
     #   django
-attrs==21.4.0
+attrs==22.1.0
     # via
     #   -r requirements/test.txt
     #   pytest
@@ -30,7 +30,7 @@ django==3.2.14
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/test.txt
-doc8==0.11.2
+doc8==1.0.0
     # via -r requirements/doc.in
 docutils==0.19
     # via
@@ -104,7 +104,7 @@ six==1.16.0
     #   edx-sphinx-theme
 snowballstemmer==2.2.0
     # via sphinx
-sphinx==5.1.0
+sphinx==5.1.1
     # via
     #   -r requirements/doc.in
     #   edx-sphinx-theme
@@ -130,8 +130,9 @@ tomli==2.0.1
     # via
     #   -r requirements/test.txt
     #   coverage
+    #   doc8
     #   pytest
-urllib3==1.26.10
+urllib3==1.26.11
     # via requests
 webencodings==0.5.1
     # via bleach
