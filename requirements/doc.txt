@@ -22,11 +22,11 @@ certifi==2022.6.15
     # via requests
 charset-normalizer==2.1.0
     # via requests
-coverage[toml]==6.4.2
+coverage[toml]==6.4.3
     # via
     #   -r requirements/test.txt
     #   pytest-cov
-django==3.2.14
+django==3.2.15
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/test.txt
@@ -92,7 +92,7 @@ pytz==2022.1
     #   -r requirements/test.txt
     #   babel
     #   django
-readme-renderer==35.0
+readme-renderer==36.0
     # via -r requirements/doc.in
 requests==2.28.1
     # via sphinx
