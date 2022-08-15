@@ -57,7 +57,7 @@ packaging==21.3
     # via
     #   -r requirements/test.txt
     #   pytest
-pbr==5.9.0
+pbr==5.10.0
     # via stevedore
 platformdirs==2.5.2
     # via pylint
@@ -102,7 +102,7 @@ pytest-django==4.5.2
     # via -r requirements/test.txt
 python-slugify==6.1.2
     # via code-annotations
-pytz==2022.1
+pytz==2022.2.1
     # via
     #   -r requirements/test.txt
     #   django
@@ -126,7 +126,7 @@ tomli==2.0.1
     #   coverage
     #   pylint
     #   pytest
-tomlkit==0.11.2
+tomlkit==0.11.4
     # via pylint
 typing-extensions==4.3.0
     # via
