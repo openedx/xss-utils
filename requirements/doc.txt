@@ -132,7 +132,7 @@ tomli==2.0.1
     #   coverage
     #   doc8
     #   pytest
-urllib3==1.26.11
+urllib3==1.26.12
     # via requests
 webencodings==0.5.1
     # via bleach
