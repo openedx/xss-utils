@@ -18,7 +18,7 @@ babel==2.10.3
     # via sphinx
 bleach==5.0.1
     # via readme-renderer
-certifi==2022.6.15
+certifi==2022.9.14
     # via requests
 charset-normalizer==2.1.1
     # via requests
@@ -40,7 +40,7 @@ docutils==0.19
     #   sphinx
 edx-sphinx-theme==3.0.0
     # via -r requirements/doc.in
-idna==3.3
+idna==3.4
     # via requests
 imagesize==1.4.1
     # via sphinx
