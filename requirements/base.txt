@@ -12,5 +12,5 @@ django==3.2.15
     #   -r requirements/base.in
 pytz==2022.2.1
     # via django
-sqlparse==0.4.2
+sqlparse==0.4.3
     # via django
