@@ -22,7 +22,7 @@ certifi==2022.9.24
     # via requests
 charset-normalizer==2.1.1
     # via requests
-coverage[toml]==6.4.4
+coverage[toml]==6.5.0
     # via
     #   -r requirements/test.txt
     #   pytest-cov
@@ -44,7 +44,7 @@ idna==3.4
     # via requests
 imagesize==1.4.1
     # via sphinx
-importlib-metadata==4.12.0
+importlib-metadata==5.0.0
     # via sphinx
 iniconfig==1.1.1
     # via
@@ -83,11 +83,11 @@ pytest==7.1.3
     #   -r requirements/test.txt
     #   pytest-cov
     #   pytest-django
-pytest-cov==3.0.0
+pytest-cov==4.0.0
     # via -r requirements/test.txt
 pytest-django==4.5.2
     # via -r requirements/test.txt
-pytz==2022.2.1
+pytz==2022.4
     # via
     #   -r requirements/test.txt
     #   babel
@@ -104,7 +104,7 @@ six==1.16.0
     #   edx-sphinx-theme
 snowballstemmer==2.2.0
     # via sphinx
-sphinx==5.2.1
+sphinx==5.2.3
     # via
     #   -r requirements/doc.in
     #   edx-sphinx-theme
