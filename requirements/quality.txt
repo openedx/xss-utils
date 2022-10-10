@@ -31,7 +31,7 @@ coverage[toml]==6.5.0
     #   pytest-cov
 dill==0.3.5.1
     # via pylint
-django==3.2.15
+django==3.2.16
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/test.txt
@@ -128,7 +128,7 @@ tomli==2.0.1
     #   pytest
 tomlkit==0.11.5
     # via pylint
-typing-extensions==4.3.0
+typing-extensions==4.4.0
     # via
     #   astroid
     #   pylint
