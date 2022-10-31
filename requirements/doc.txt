@@ -40,6 +40,10 @@ docutils==0.19
     #   sphinx
 edx-sphinx-theme==3.0.0
     # via -r requirements/doc.in
+exceptiongroup==1.0.0
+    # via
+    #   -r requirements/test.txt
+    #   pytest
 idna==3.4
     # via requests
 imagesize==1.4.1
@@ -59,13 +63,9 @@ packaging==21.3
     #   -r requirements/test.txt
     #   pytest
     #   sphinx
-pbr==5.10.0
+pbr==5.11.0
     # via stevedore
 pluggy==1.0.0
-    # via
-    #   -r requirements/test.txt
-    #   pytest
-py==1.11.0
     # via
     #   -r requirements/test.txt
     #   pytest
@@ -78,7 +78,7 @@ pyparsing==3.0.9
     # via
     #   -r requirements/test.txt
     #   packaging
-pytest==7.1.3
+pytest==7.2.0
     # via
     #   -r requirements/test.txt
     #   pytest-cov
@@ -87,7 +87,7 @@ pytest-cov==4.0.0
     # via -r requirements/test.txt
 pytest-django==4.5.2
     # via -r requirements/test.txt
-pytz==2022.4
+pytz==2022.5
     # via
     #   -r requirements/test.txt
     #   babel
@@ -124,7 +124,7 @@ sqlparse==0.4.3
     # via
     #   -r requirements/test.txt
     #   django
-stevedore==4.0.1
+stevedore==4.1.0
     # via doc8
 tomli==2.0.1
     # via
@@ -136,5 +136,5 @@ urllib3==1.26.12
     # via requests
 webencodings==0.5.1
     # via bleach
-zipp==3.9.0
+zipp==3.10.0
     # via importlib-metadata
