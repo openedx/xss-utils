@@ -15,7 +15,7 @@ coverage[toml]==6.5.0
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/base.txt
-exceptiongroup==1.0.0
+exceptiongroup==1.0.1
     # via pytest
 iniconfig==1.1.1
     # via pytest
@@ -33,7 +33,7 @@ pytest-cov==4.0.0
     # via -r requirements/test.in
 pytest-django==4.5.2
     # via -r requirements/test.in
-pytz==2022.5
+pytz==2022.6
     # via
     #   -r requirements/base.txt
     #   django
