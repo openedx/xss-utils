@@ -14,13 +14,13 @@ attrs==22.2.0
     # via
     #   -r requirements/test.txt
     #   pytest
-babel==2.11.0
+babel==2.12.1
     # via sphinx
 bleach==6.0.0
     # via readme-renderer
 certifi==2022.12.7
     # via requests
-charset-normalizer==3.0.1
+charset-normalizer==3.1.0
     # via requests
 coverage[toml]==7.2.1
     # via
@@ -40,7 +40,7 @@ docutils==0.19
     #   sphinx
 edx-sphinx-theme==3.1.0
     # via -r requirements/doc.in
-exceptiongroup==1.1.0
+exceptiongroup==1.1.1
     # via
     #   -r requirements/test.txt
     #   pytest
@@ -74,7 +74,7 @@ pygments==2.14.0
     #   doc8
     #   readme-renderer
     #   sphinx
-pytest==7.2.1
+pytest==7.2.2
     # via
     #   -r requirements/test.txt
     #   pytest-cov
@@ -129,7 +129,7 @@ tomli==2.0.1
     #   coverage
     #   doc8
     #   pytest
-urllib3==1.26.14
+urllib3==1.26.15
     # via requests
 webencodings==0.5.1
     # via bleach
