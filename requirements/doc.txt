@@ -8,7 +8,7 @@ accessible-pygments==0.0.4
     # via pydata-sphinx-theme
 alabaster==0.7.13
     # via sphinx
-asgiref==3.6.0
+asgiref==3.7.2
     # via
     #   -r requirements/test.txt
     #   django
@@ -24,7 +24,7 @@ certifi==2023.5.7
     # via requests
 charset-normalizer==3.1.0
     # via requests
-coverage[toml]==7.2.5
+coverage[toml]==7.2.6
     # via
     #   -r requirements/test.txt
     #   pytest-cov
@@ -85,7 +85,7 @@ pytest==7.3.1
     #   -r requirements/test.txt
     #   pytest-cov
     #   pytest-django
-pytest-cov==4.0.0
+pytest-cov==4.1.0
     # via -r requirements/test.txt
 pytest-django==4.5.2
     # via -r requirements/test.txt
@@ -96,7 +96,7 @@ pytz==2023.3
     #   django
 readme-renderer==37.3
     # via -r requirements/doc.in
-requests==2.30.0
+requests==2.31.0
     # via sphinx
 restructuredtext-lint==1.4.0
     # via doc8
@@ -130,7 +130,7 @@ sqlparse==0.4.4
     # via
     #   -r requirements/test.txt
     #   django
-stevedore==5.0.0
+stevedore==5.1.0
     # via doc8
 tomli==2.0.1
     # via
@@ -138,8 +138,11 @@ tomli==2.0.1
     #   coverage
     #   doc8
     #   pytest
-typing-extensions==4.5.0
-    # via pydata-sphinx-theme
+typing-extensions==4.6.2
+    # via
+    #   -r requirements/test.txt
+    #   asgiref
+    #   pydata-sphinx-theme
 urllib3==2.0.2
     # via requests
 webencodings==0.5.1
