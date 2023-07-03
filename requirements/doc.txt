@@ -67,7 +67,7 @@ packaging==23.1
     #   sphinx
 pbr==5.11.1
     # via stevedore
-pluggy==1.0.0
+pluggy==1.2.0
     # via
     #   -r requirements/test.txt
     #   pytest
@@ -80,7 +80,7 @@ pygments==2.15.1
     #   pydata-sphinx-theme
     #   readme-renderer
     #   sphinx
-pytest==7.3.2
+pytest==7.4.0
     # via
     #   -r requirements/test.txt
     #   pytest-cov
@@ -94,7 +94,7 @@ pytz==2023.3
     #   -r requirements/test.txt
     #   babel
     #   django
-readme-renderer==37.3
+readme-renderer==40.0
     # via -r requirements/doc.in
 requests==2.31.0
     # via sphinx
@@ -106,9 +106,8 @@ snowballstemmer==2.2.0
     # via sphinx
 soupsieve==2.4.1
     # via beautifulsoup4
-sphinx==5.3.0
+sphinx==6.2.1
     # via
-    #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/doc.in
     #   pydata-sphinx-theme
     #   sphinx-book-theme
@@ -138,7 +137,7 @@ tomli==2.0.1
     #   coverage
     #   doc8
     #   pytest
-typing-extensions==4.6.3
+typing-extensions==4.7.1
     # via
     #   -r requirements/test.txt
     #   asgiref
