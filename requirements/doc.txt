@@ -73,7 +73,7 @@ pluggy==1.2.0
     #   pytest
 pydata-sphinx-theme==0.13.3
     # via sphinx-book-theme
-pygments==2.15.1
+pygments==2.16.1
     # via
     #   accessible-pygments
     #   doc8
