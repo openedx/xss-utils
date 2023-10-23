@@ -20,11 +20,12 @@ beautifulsoup4==4.12.2
     # via pydata-sphinx-theme
 certifi==2023.7.22
     # via requests
-charset-normalizer==3.3.0
+charset-normalizer==3.3.1
     # via requests
 coverage[toml]==7.3.2
     # via
     #   -r requirements/test.txt
+    #   coverage
     #   pytest-cov
 django==3.2.22
     # via
@@ -140,7 +141,7 @@ typing-extensions==4.8.0
     #   -r requirements/test.txt
     #   asgiref
     #   pydata-sphinx-theme
-urllib3==2.0.6
+urllib3==2.0.7
     # via requests
 zipp==3.17.0
     # via importlib-metadata
