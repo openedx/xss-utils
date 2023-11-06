@@ -28,11 +28,11 @@ coverage[toml]==7.3.2
     #   pytest-cov
 dill==0.3.7
     # via pylint
-django==3.2.22
+django==3.2.23
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/test.txt
-edx-lint==5.3.4
+edx-lint==5.3.6
     # via -r requirements/quality.in
 exceptiongroup==1.1.3
     # via
@@ -76,20 +76,20 @@ pylint==3.0.2
     #   pylint-plugin-utils
 pylint-celery==0.3
     # via edx-lint
-pylint-django==2.5.4
+pylint-django==2.5.5
     # via edx-lint
 pylint-plugin-utils==0.8.2
     # via
     #   pylint-celery
     #   pylint-django
-pytest==7.4.2
+pytest==7.4.3
     # via
     #   -r requirements/test.txt
     #   pytest-cov
     #   pytest-django
 pytest-cov==4.1.0
     # via -r requirements/test.txt
-pytest-django==4.5.2
+pytest-django==4.6.0
     # via -r requirements/test.txt
 python-slugify==8.0.1
     # via code-annotations
@@ -117,7 +117,7 @@ tomli==2.0.1
     #   coverage
     #   pylint
     #   pytest
-tomlkit==0.12.1
+tomlkit==0.12.2
     # via pylint
 typing-extensions==4.8.0
     # via
