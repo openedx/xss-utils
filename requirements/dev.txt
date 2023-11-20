@@ -144,7 +144,7 @@ pycodestyle==2.11.1
     # via -r requirements/quality.txt
 pydocstyle==6.3.0
     # via -r requirements/quality.txt
-pygments==2.16.1
+pygments==2.17.1
     # via diff-cover
 pylint==3.0.2
     # via
@@ -229,7 +229,7 @@ tomli==2.0.1
     #   pyproject-hooks
     #   pytest
     #   tox
-tomlkit==0.12.2
+tomlkit==0.12.3
     # via
     #   -r requirements/quality.txt
     #   pylint
