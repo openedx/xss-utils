@@ -79,7 +79,7 @@ filelock==3.13.1
     #   -r requirements/ci.txt
     #   tox
     #   virtualenv
-importlib-metadata==6.8.0
+importlib-metadata==7.0.0
     # via
     #   -r requirements/pip-tools.txt
     #   build
@@ -233,7 +233,7 @@ tomlkit==0.12.3
     # via
     #   -r requirements/quality.txt
     #   pylint
-tox==4.11.3
+tox==4.11.4
     # via -r requirements/ci.txt
 typing-extensions==4.8.0
     # via
@@ -241,7 +241,7 @@ typing-extensions==4.8.0
     #   asgiref
     #   astroid
     #   pylint
-virtualenv==20.24.7
+virtualenv==20.25.0
     # via
     #   -r requirements/ci.txt
     #   tox
