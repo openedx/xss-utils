@@ -14,8 +14,14 @@ Change Log
 Unreleased
 ~~~~~~~~~~
 
-*
+[0.5.0] - 2023-08-01
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+* Switch from ``edx-sphinx-theme`` to ``sphinx-book-theme`` since the former is
+  deprecated.  See https://github.com/openedx/edx-sphinx-theme/issues/184 for
+  more details.
+* Added supportt for Django 4.2
+  
 [0.4.0] - 2022-01-20
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

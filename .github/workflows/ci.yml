@@ -15,11 +15,11 @@ jobs:
       matrix:
         os: [ubuntu-20.04]
         python-version: ['3.8']
-        toxenv: [quality, docs, django32, django40, check_keywords]
+        toxenv: [quality, docs, django32, django42, check_keywords]
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v4
     - name: setup python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v5
       with:
         python-version: ${{ matrix.python-version }}
 
@@ -35,8 +35,8 @@ jobs:
       run: tox
 
     - name: Run coverage
-      if: matrix.python-version == '3.8' && matrix.toxenv == 'django32'
-      uses: codecov/codecov-action@v1
+      if: matrix.python-version == '3.8' && matrix.toxenv == 'django42'
+      uses: codecov/codecov-action@v3
       with:
         flags: unittests
         fail_ci_if_error: true

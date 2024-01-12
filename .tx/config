@@ -1,14 +1,15 @@
 [main]
 host = https://www.transifex.com
 
-[edx-platform.xss-utils]
+[o:open-edx:p:edx-platform:r:xss-utils]
 file_filter = xss_utils/conf/locale/<lang>/LC_MESSAGES/django.po
 source_file = xss_utils/conf/locale/en/LC_MESSAGES/django.po
 source_lang = en
-type = PO
+type        = PO
 
-[edx-platform.xss-utils-js]
+[o:open-edx:p:edx-platform:r:xss-utils-js]
 file_filter = xss_utils/conf/locale/<lang>/LC_MESSAGES/djangojs.po
 source_file = xss_utils/conf/locale/en/LC_MESSAGES/djangojs.po
 source_lang = en
-type = PO
+type        = PO
+
