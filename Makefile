@@ -1,6 +1,6 @@
 .PHONY: clean compile_translations coverage diff_cover docs dummy_translations \
 	extract_translations fake_translations help pull_translations push_translations \
-	quality requirements selfcheck test test-all upgrade validate
+	quality requirements selfcheck test test-all upgrade validate check_keywords
 
 .DEFAULT_GOAL := help
 
@@ -79,3 +79,6 @@ validate: quality test ## run tests and quality checks
 
 selfcheck: ## check that the Makefile is well-formed
 	@echo "The Makefile is well-formed."
+
+check_keywords: ## Scan the Django models in all installed apps in this project for restricted field names
+	python manage.py check_reserved_keywords --override_file db_keyword_overrides.yml
