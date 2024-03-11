@@ -30,7 +30,7 @@ coverage[toml]==7.4.3
     # via
     #   -r requirements/test.txt
     #   pytest-cov
-django==4.2.10
+django==4.2.11
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/test.txt
@@ -51,7 +51,7 @@ idna==3.6
     # via requests
 imagesize==1.4.1
     # via sphinx
-importlib-metadata==7.0.1
+importlib-metadata==7.0.2
     # via sphinx
 iniconfig==2.0.0
     # via
@@ -63,7 +63,7 @@ markupsafe==2.1.5
     # via jinja2
 nh3==0.2.15
     # via readme-renderer
-packaging==23.2
+packaging==24.0
     # via
     #   -r requirements/test.txt
     #   pydata-sphinx-theme
@@ -84,7 +84,7 @@ pygments==2.17.2
     #   pydata-sphinx-theme
     #   readme-renderer
     #   sphinx
-pytest==8.1.0
+pytest==8.1.1
     # via
     #   -r requirements/test.txt
     #   pytest-cov
