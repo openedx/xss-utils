@@ -4,14 +4,19 @@
 #
 #    make upgrade
 #
-asgiref==3.7.2
+asgiref==3.8.1
     # via
     #   -r requirements/test.txt
     #   django
-astroid==3.0.3
+astroid==3.1.0
     # via
     #   pylint
     #   pylint-celery
+backports-zoneinfo==0.2.1 ; python_version < "3.9"
+    # via
+    #   -c requirements/constraints.txt
+    #   -r requirements/test.txt
+    #   django
 click==8.1.7
     # via
     #   click-log
@@ -19,15 +24,15 @@ click==8.1.7
     #   edx-lint
 click-log==0.4.0
     # via edx-lint
-code-annotations==1.6.0
+code-annotations==1.7.0
     # via edx-lint
-coverage[toml]==7.4.1
+coverage[toml]==7.4.4
     # via
     #   -r requirements/test.txt
     #   pytest-cov
 dill==0.3.8
     # via pylint
-django==3.2.24
+django==4.2.11
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/test.txt
@@ -51,7 +56,7 @@ markupsafe==2.1.5
     # via jinja2
 mccabe==0.7.0
     # via pylint
-packaging==23.2
+packaging==24.0
     # via
     #   -r requirements/test.txt
     #   pytest
@@ -67,7 +72,7 @@ pycodestyle==2.11.1
     # via -r requirements/quality.in
 pydocstyle==6.3.0
     # via -r requirements/quality.in
-pylint==3.0.3
+pylint==3.1.0
     # via
     #   edx-lint
     #   pylint-celery
@@ -81,21 +86,17 @@ pylint-plugin-utils==0.8.2
     # via
     #   pylint-celery
     #   pylint-django
-pytest==8.0.1
+pytest==8.1.1
     # via
     #   -r requirements/test.txt
     #   pytest-cov
     #   pytest-django
-pytest-cov==4.1.0
+pytest-cov==5.0.0
     # via -r requirements/test.txt
 pytest-django==4.8.0
     # via -r requirements/test.txt
 python-slugify==8.0.4
     # via code-annotations
-pytz==2024.1
-    # via
-    #   -r requirements/test.txt
-    #   django
 pyyaml==6.0.1
     # via code-annotations
 six==1.16.0
@@ -106,7 +107,7 @@ sqlparse==0.4.4
     # via
     #   -r requirements/test.txt
     #   django
-stevedore==5.1.0
+stevedore==5.2.0
     # via code-annotations
 text-unidecode==1.3
     # via python-slugify
@@ -116,9 +117,9 @@ tomli==2.0.1
     #   coverage
     #   pylint
     #   pytest
-tomlkit==0.12.3
+tomlkit==0.12.4
     # via pylint
-typing-extensions==4.9.0
+typing-extensions==4.10.0
     # via
     #   -r requirements/test.txt
     #   asgiref
