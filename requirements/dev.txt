@@ -17,7 +17,7 @@ backports-zoneinfo==0.2.1
     # via
     #   -r requirements/quality.txt
     #   django
-build==1.1.1
+build==1.2.1
     # via
     #   -r requirements/pip-tools.txt
     #   pip-tools
@@ -42,7 +42,7 @@ click-log==0.4.0
     # via
     #   -r requirements/quality.txt
     #   edx-lint
-code-annotations==1.7.0
+code-annotations==1.8.0
     # via
     #   -r requirements/quality.txt
     #   edx-lint
@@ -54,7 +54,7 @@ coverage[toml]==7.4.4
     # via
     #   -r requirements/quality.txt
     #   pytest-cov
-diff-cover==8.0.3
+diff-cover==9.0.0
     # via -r requirements/dev.in
 dill==0.3.8
     # via
@@ -69,15 +69,15 @@ django==4.2.11
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/quality.txt
     #   edx-i18n-tools
-edx-i18n-tools==1.3.0
+edx-i18n-tools==1.5.0
     # via -r requirements/dev.in
 edx-lint==5.3.6
     # via -r requirements/quality.txt
-exceptiongroup==1.2.0
+exceptiongroup==1.2.1
     # via
     #   -r requirements/quality.txt
     #   pytest
-filelock==3.13.1
+filelock==3.13.4
     # via
     #   -r requirements/ci.txt
     #   tox
@@ -100,7 +100,7 @@ jinja2==3.1.3
     #   -r requirements/quality.txt
     #   code-annotations
     #   diff-cover
-lxml==5.1.0
+lxml==5.2.1
     # via edx-i18n-tools
 markupsafe==2.1.5
     # via
@@ -119,7 +119,7 @@ packaging==24.0
     #   pyproject-api
     #   pytest
     #   tox
-path==16.10.0
+path==16.14.0
     # via edx-i18n-tools
 pbr==6.0.0
     # via
@@ -134,7 +134,7 @@ platformdirs==4.2.0
     #   pylint
     #   tox
     #   virtualenv
-pluggy==1.4.0
+pluggy==1.5.0
     # via
     #   -r requirements/ci.txt
     #   -r requirements/quality.txt
@@ -204,7 +204,7 @@ snowballstemmer==2.2.0
     # via
     #   -r requirements/quality.txt
     #   pydocstyle
-sqlparse==0.4.4
+sqlparse==0.5.0
     # via
     #   -r requirements/quality.txt
     #   django
@@ -235,13 +235,13 @@ tomlkit==0.12.4
     #   pylint
 tox==4.14.2
     # via -r requirements/ci.txt
-typing-extensions==4.10.0
+typing-extensions==4.11.0
     # via
     #   -r requirements/quality.txt
     #   asgiref
     #   astroid
     #   pylint
-virtualenv==20.25.1
+virtualenv==20.25.3
     # via
     #   -r requirements/ci.txt
     #   tox
