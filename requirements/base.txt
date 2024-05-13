@@ -10,11 +10,11 @@ backports-zoneinfo==0.2.1 ; python_version < "3.9"
     # via
     #   -c requirements/constraints.txt
     #   django
-django==4.2.11
+django==4.2.13
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/base.in
-sqlparse==0.4.4
+sqlparse==0.5.0
     # via django
-typing-extensions==4.10.0
+typing-extensions==4.11.0
     # via asgiref
