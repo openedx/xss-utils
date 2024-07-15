@@ -8,7 +8,7 @@ asgiref==3.8.1
     # via
     #   -r requirements/quality.txt
     #   django
-astroid==3.1.0
+astroid==3.2.3
     # via
     #   -r requirements/quality.txt
     #   pylint
@@ -43,7 +43,7 @@ click-log==0.4.0
     # via
     #   -r requirements/quality.txt
     #   edx-lint
-code-annotations==1.7.0
+code-annotations==1.8.0
     # via
     #   -r requirements/quality.txt
     #   edx-lint
@@ -51,11 +51,11 @@ colorama==0.4.6
     # via
     #   -r requirements/ci.txt
     #   tox
-coverage[toml]==7.4.4
+coverage[toml]==7.6.0
     # via
     #   -r requirements/quality.txt
     #   pytest-cov
-diff-cover==8.0.3
+diff-cover==9.1.0
     # via -r requirements/dev.in
 dill==0.3.8
     # via
@@ -65,20 +65,20 @@ distlib==0.3.8
     # via
     #   -r requirements/ci.txt
     #   virtualenv
-django==4.2.11
+django==4.2.14
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/quality.txt
     #   edx-i18n-tools
-edx-i18n-tools==1.3.0
+edx-i18n-tools==1.6.0
     # via -r requirements/dev.in
 edx-lint==5.3.6
     # via -r requirements/quality.txt
-exceptiongroup==1.2.0
+exceptiongroup==1.2.2
     # via
     #   -r requirements/quality.txt
     #   pytest
-filelock==3.13.3
+filelock==3.15.4
     # via
     #   -r requirements/ci.txt
     #   tox
@@ -96,13 +96,17 @@ isort==5.13.2
     # via
     #   -r requirements/quality.txt
     #   pylint
-jinja2==3.1.3
+jinja2==3.1.4
     # via
     #   -r requirements/quality.txt
     #   code-annotations
     #   diff-cover
-lxml==5.2.0
-    # via edx-i18n-tools
+lxml[html-clean,html_clean]==5.2.2
+    # via
+    #   edx-i18n-tools
+    #   lxml-html-clean
+lxml-html-clean==0.1.1
+    # via lxml
 markupsafe==2.1.5
     # via
     #   -r requirements/quality.txt
@@ -111,7 +115,7 @@ mccabe==0.7.0
     # via
     #   -r requirements/quality.txt
     #   pylint
-packaging==24.0
+packaging==24.1
     # via
     #   -r requirements/ci.txt
     #   -r requirements/pip-tools.txt
@@ -120,7 +124,7 @@ packaging==24.0
     #   pyproject-api
     #   pytest
     #   tox
-path==16.10.0
+path==16.14.0
     # via edx-i18n-tools
 pbr==6.0.0
     # via
@@ -128,14 +132,14 @@ pbr==6.0.0
     #   stevedore
 pip-tools==7.4.1
     # via -r requirements/pip-tools.txt
-platformdirs==4.2.0
+platformdirs==4.2.2
     # via
     #   -r requirements/ci.txt
     #   -r requirements/quality.txt
     #   pylint
     #   tox
     #   virtualenv
-pluggy==1.4.0
+pluggy==1.5.0
     # via
     #   -r requirements/ci.txt
     #   -r requirements/quality.txt
@@ -144,13 +148,13 @@ pluggy==1.4.0
     #   tox
 polib==1.2.0
     # via edx-i18n-tools
-pycodestyle==2.11.1
+pycodestyle==2.12.0
     # via -r requirements/quality.txt
 pydocstyle==6.3.0
     # via -r requirements/quality.txt
-pygments==2.17.2
+pygments==2.18.0
     # via diff-cover
-pylint==3.1.0
+pylint==3.2.5
     # via
     #   -r requirements/quality.txt
     #   edx-lint
@@ -170,16 +174,16 @@ pylint-plugin-utils==0.8.2
     #   -r requirements/quality.txt
     #   pylint-celery
     #   pylint-django
-pyproject-api==1.6.1
+pyproject-api==1.7.1
     # via
     #   -r requirements/ci.txt
     #   tox
-pyproject-hooks==1.0.0
+pyproject-hooks==1.1.0
     # via
     #   -r requirements/pip-tools.txt
     #   build
     #   pip-tools
-pytest==8.1.1
+pytest==8.2.2
     # via
     #   -r requirements/quality.txt
     #   pytest-cov
@@ -205,7 +209,7 @@ snowballstemmer==2.2.0
     # via
     #   -r requirements/quality.txt
     #   pydocstyle
-sqlparse==0.4.4
+sqlparse==0.5.0
     # via
     #   -r requirements/quality.txt
     #   django
@@ -227,22 +231,21 @@ tomli==2.0.1
     #   pip-tools
     #   pylint
     #   pyproject-api
-    #   pyproject-hooks
     #   pytest
     #   tox
-tomlkit==0.12.4
+tomlkit==0.13.0
     # via
     #   -r requirements/quality.txt
     #   pylint
-tox==4.14.2
+tox==4.16.0
     # via -r requirements/ci.txt
-typing-extensions==4.10.0
+typing-extensions==4.12.2
     # via
     #   -r requirements/quality.txt
     #   asgiref
     #   astroid
     #   pylint
-virtualenv==20.25.1
+virtualenv==20.26.3
     # via
     #   -r requirements/ci.txt
     #   tox
@@ -250,7 +253,7 @@ wheel==0.43.0
     # via
     #   -r requirements/pip-tools.txt
     #   pip-tools
-zipp==3.18.1
+zipp==3.19.2
     # via
     #   -r requirements/pip-tools.txt
     #   importlib-metadata
