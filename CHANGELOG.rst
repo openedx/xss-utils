@@ -6,13 +6,23 @@ Change Log
    in this file.  It adheres to the structure of http://keepachangelog.com/ ,
    but in reStructuredText instead of Markdown (for ease of incorporation into
    Sphinx documentation and the PyPI description).
-   
+
    This project adheres to Semantic Versioning (http://semver.org/).
 
 .. There should always be an "Unreleased" section for changes pending release.
 
 Unreleased
 ~~~~~~~~~~
+
+[0.7.0] - 2025-02-28
+~~~~~~~~~~~~~~~~~~~~
+
+* Drop support for Python 3.8
+
+[0.6.0] - 2024-04-22
+~~~~~~~~~~~~~~~~~~~~
+
+* Test and declare Python 3.11 and 3.12 compatibility.
 
 [0.5.0] - 2023-08-01
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -21,7 +31,7 @@ Unreleased
   deprecated.  See https://github.com/openedx/edx-sphinx-theme/issues/184 for
   more details.
 * Added supportt for Django 4.2
-  
+
 [0.4.0] - 2022-01-20
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
