@@ -22,11 +22,11 @@ certifi==2025.1.31
     # via requests
 charset-normalizer==3.4.1
     # via requests
-coverage[toml]==7.6.12
+coverage[toml]==7.8.0
     # via
     #   -r requirements/test.txt
     #   pytest-cov
-django==4.2.19
+django==4.2.20
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/test.txt
@@ -43,11 +43,11 @@ idna==3.10
     # via requests
 imagesize==1.4.1
     # via sphinx
-iniconfig==2.0.0
+iniconfig==2.1.0
     # via
     #   -r requirements/test.txt
     #   pytest
-jinja2==3.1.5
+jinja2==3.1.6
     # via sphinx
 markupsafe==3.0.2
     # via jinja2
@@ -79,9 +79,9 @@ pytest==8.3.5
     #   -r requirements/test.txt
     #   pytest-cov
     #   pytest-django
-pytest-cov==6.0.0
+pytest-cov==6.1.1
     # via -r requirements/test.txt
-pytest-django==4.10.0
+pytest-django==4.11.1
     # via -r requirements/test.txt
 readme-renderer==44.0
     # via -r requirements/doc.in
@@ -120,7 +120,7 @@ sqlparse==0.5.3
     #   django
 stevedore==5.4.1
     # via doc8
-typing-extensions==4.12.2
+typing-extensions==4.13.1
     # via
     #   beautifulsoup4
     #   pydata-sphinx-theme
