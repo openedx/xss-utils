@@ -8,7 +8,7 @@ asgiref==3.8.1
     # via
     #   -r requirements/base.txt
     #   django
-coverage[toml]==7.8.0
+coverage[toml]==7.8.2
     # via pytest-cov
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
@@ -17,7 +17,7 @@ iniconfig==2.1.0
     # via pytest
 packaging==25.0
     # via pytest
-pluggy==1.5.0
+pluggy==1.6.0
     # via pytest
 pytest==8.3.5
     # via
