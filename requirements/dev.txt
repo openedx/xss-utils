@@ -46,7 +46,7 @@ colorama==0.4.6
     # via
     #   -r requirements/ci.txt
     #   tox
-coverage[toml]==7.10.3
+coverage[toml]==7.10.5
     # via
     #   -r requirements/quality.txt
     #   pytest-cov
@@ -69,7 +69,7 @@ edx-i18n-tools==1.9.0
     # via -r requirements/dev.in
 edx-lint==5.6.0
     # via -r requirements/quality.txt
-filelock==3.18.0
+filelock==3.19.1
     # via
     #   -r requirements/ci.txt
     #   tox
@@ -87,7 +87,7 @@ jinja2==3.1.6
     #   -r requirements/quality.txt
     #   code-annotations
     #   diff-cover
-lxml[html-clean]==6.0.0
+lxml[html-clean]==6.0.1
     # via
     #   edx-i18n-tools
     #   lxml-html-clean
@@ -112,7 +112,7 @@ packaging==25.0
     #   tox
 path==16.16.0
     # via edx-i18n-tools
-pbr==6.1.1
+pbr==7.0.1
     # via
     #   -r requirements/quality.txt
     #   stevedore
@@ -217,7 +217,7 @@ tomlkit==0.13.3
     #   pylint
 tox==4.28.4
     # via -r requirements/ci.txt
-virtualenv==20.33.1
+virtualenv==20.34.0
     # via
     #   -r requirements/ci.txt
     #   tox

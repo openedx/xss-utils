@@ -16,13 +16,13 @@ babel==2.17.0
     # via
     #   pydata-sphinx-theme
     #   sphinx
-beautifulsoup4==4.13.4
+beautifulsoup4==4.13.5
     # via pydata-sphinx-theme
 certifi==2025.8.3
     # via requests
 charset-normalizer==3.4.3
     # via requests
-coverage[toml]==7.10.3
+coverage[toml]==7.10.5
     # via
     #   -r requirements/test.txt
     #   pytest-cov
@@ -59,7 +59,7 @@ packaging==25.0
     #   pydata-sphinx-theme
     #   pytest
     #   sphinx
-pbr==6.1.1
+pbr==7.0.1
     # via stevedore
 pluggy==1.6.0
     # via
@@ -88,7 +88,7 @@ pytest-django==4.11.1
     # via -r requirements/test.txt
 readme-renderer==44.0
     # via -r requirements/doc.in
-requests==2.32.4
+requests==2.32.5
     # via sphinx
 restructuredtext-lint==1.4.0
     # via doc8
