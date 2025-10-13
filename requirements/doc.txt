@@ -8,7 +8,7 @@ accessible-pygments==0.0.5
     # via pydata-sphinx-theme
 alabaster==1.0.0
     # via sphinx
-asgiref==3.9.1
+asgiref==3.10.0
     # via
     #   -r requirements/test.txt
     #   django
@@ -16,19 +16,19 @@ babel==2.17.0
     # via
     #   pydata-sphinx-theme
     #   sphinx
-beautifulsoup4==4.13.4
+beautifulsoup4==4.14.2
     # via pydata-sphinx-theme
-certifi==2025.8.3
+certifi==2025.10.5
     # via requests
 charset-normalizer==3.4.3
     # via requests
-coverage[toml]==7.10.3
+coverage[toml]==7.10.7
     # via
     #   -r requirements/test.txt
     #   pytest-cov
-django==4.2.23
+django==4.2.25
     # via
-    #   -c https:/raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
+    #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/test.txt
 doc8==2.0.0
     # via -r requirements/doc.in
@@ -39,7 +39,7 @@ docutils==0.21.2
     #   readme-renderer
     #   restructuredtext-lint
     #   sphinx
-idna==3.10
+idna==3.11
     # via requests
 imagesize==1.4.1
     # via sphinx
@@ -49,9 +49,9 @@ iniconfig==2.1.0
     #   pytest
 jinja2==3.1.6
     # via sphinx
-markupsafe==3.0.2
+markupsafe==3.0.3
     # via jinja2
-nh3==0.3.0
+nh3==0.3.1
     # via readme-renderer
 packaging==25.0
     # via
@@ -59,8 +59,6 @@ packaging==25.0
     #   pydata-sphinx-theme
     #   pytest
     #   sphinx
-pbr==6.1.1
-    # via stevedore
 pluggy==1.6.0
     # via
     #   -r requirements/test.txt
@@ -77,18 +75,18 @@ pygments==2.19.2
     #   pytest
     #   readme-renderer
     #   sphinx
-pytest==8.4.1
+pytest==8.4.2
     # via
     #   -r requirements/test.txt
     #   pytest-cov
     #   pytest-django
-pytest-cov==6.2.1
+pytest-cov==7.0.0
     # via -r requirements/test.txt
 pytest-django==4.11.1
     # via -r requirements/test.txt
 readme-renderer==44.0
     # via -r requirements/doc.in
-requests==2.32.4
+requests==2.32.5
     # via sphinx
 restructuredtext-lint==1.4.0
     # via doc8
@@ -96,7 +94,7 @@ roman-numerals-py==3.1.0
     # via sphinx
 snowballstemmer==3.0.1
     # via sphinx
-soupsieve==2.7
+soupsieve==2.8
     # via beautifulsoup4
 sphinx==8.2.3
     # via
@@ -121,14 +119,11 @@ sqlparse==0.5.3
     # via
     #   -r requirements/test.txt
     #   django
-stevedore==5.4.1
+stevedore==5.5.0
     # via doc8
-typing-extensions==4.14.1
+typing-extensions==4.15.0
     # via
     #   beautifulsoup4
     #   pydata-sphinx-theme
 urllib3==2.5.0
     # via requests
-
-# The following packages are considered to be unsafe in a requirements file:
-# setuptools
