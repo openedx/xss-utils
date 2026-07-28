@@ -37,7 +37,7 @@ def get_version(*file_paths):
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(REPO_ROOT)
 
-VERSION = get_version('../xss_utils', '__init__.py')
+VERSION = get_version('../src/xss_utils', '__init__.py')
 
 # Configure Django for autodoc usage
 settings.configure()

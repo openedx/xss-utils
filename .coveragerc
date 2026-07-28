@@ -1,7 +1,7 @@
 [run]
 branch = True
 data_file = .coverage
-source=xss_utils
+source=src/xss_utils
 omit =
     test_settings
     *migrations*

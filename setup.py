@@ -9,7 +9,7 @@ import os
 import re
 import sys
 
-from setuptools import setup
+from setuptools import find_packages, setup
 
 
 def get_version(*file_paths):
@@ -120,7 +120,7 @@ def is_requirement(line):
     return line and line.strip() and not line.startswith(('-r', '#', '-e', 'git+', '-c'))
 
 
-VERSION = get_version('xss_utils', '__init__.py')
+VERSION = get_version('src', 'xss_utils', '__init__.py')
 
 if sys.argv[-1] == 'tag':
     print("Tagging the version on github:")
@@ -139,9 +139,8 @@ setup(
     author='edX',
     author_email='oscm@edx.org',
     url='https://github.com/openedx/xss-utils',
-    packages=[
-        'xss_utils',
-    ],
+    package_dir={'': 'src'},
+    packages=find_packages(where='src'),
     include_package_data=True,
     install_requires=load_requirements('requirements/base.in'),
     license="AGPL 3.0",
