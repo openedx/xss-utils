@@ -28,9 +28,6 @@ instructions.
 - [ ] PR author is listed in AUTHORS
 
 **Post merge:**
-- [ ] Create a tag
-- [ ] Check new version is pushed to PyPi after tag-triggered build is 
-      finished.
 - [ ] Delete working branch (if not needed anymore)
 
 **Author concerns:** List any concerns about this PR - inelegant 
