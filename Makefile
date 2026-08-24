@@ -35,7 +35,13 @@ coverage: clean ## generate and view HTML coverage report
 	$(BROWSER) htmlcov/index.html
 
 docs: ## generate Sphinx HTML documentation, including API docs
-	uv run tox -e docs
+	uv sync --group doc
+	DJANGO_SETTINGS_MODULE=test_settings PYTHONPATH=$(CURDIR) uv run doc8 --ignore-path docs/_build README.rst docs
+	rm -f docs/xss_utils.rst
+	rm -f docs/modules.rst
+	DJANGO_SETTINGS_MODULE=test_settings PYTHONPATH=$(CURDIR) uv run make -C docs clean
+	DJANGO_SETTINGS_MODULE=test_settings PYTHONPATH=$(CURDIR) uv run make -C docs html
+	uv run python -m build
 	$(BROWSER) docs/_build/html/index.html
 
 upgrade: ## update the uv.lock file with the latest packages satisfying pyproject.toml
@@ -43,7 +49,14 @@ upgrade: ## update the uv.lock file with the latest packages satisfying pyprojec
 	uv lock --upgrade
 
 quality: ## check coding style with pycodestyle and pylint
-	uv run tox -e quality
+	uv sync --group quality
+	touch tests/__init__.py
+	DJANGO_SETTINGS_MODULE=test_settings PYTHONPATH=$(CURDIR) uv run pylint src/xss_utils tests tests_utils manage.py
+	rm tests/__init__.py
+	DJANGO_SETTINGS_MODULE=test_settings PYTHONPATH=$(CURDIR) uv run pycodestyle src/xss_utils tests manage.py
+	DJANGO_SETTINGS_MODULE=test_settings PYTHONPATH=$(CURDIR) uv run pydocstyle src/xss_utils tests manage.py
+	DJANGO_SETTINGS_MODULE=test_settings PYTHONPATH=$(CURDIR) uv run isort --check-only --diff tests test_utils src/xss_utils manage.py test_settings.py
+	$(MAKE) selfcheck
 
 requirements: ## install development environment requirements
 	uv sync --group dev
