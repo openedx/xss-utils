@@ -14,13 +14,13 @@ serve to show the default.
 import os
 import sys
 from datetime import datetime
-from importlib.metadata import version as get_installed_version
+from importlib.metadata import version as get_version
 from subprocess import check_call
 
 from django import setup as django_setup
 from django.conf import settings
 
-VERSION = get_installed_version('xss-utils')
+VERSION = get_version('xss-utils')
 
 # Configure Django for autodoc usage
 settings.configure()
