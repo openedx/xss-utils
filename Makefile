@@ -55,7 +55,7 @@ quality: ## check coding style with pycodestyle and pylint
 	rm tests/__init__.py
 	DJANGO_SETTINGS_MODULE=test_settings PYTHONPATH=$(CURDIR) uv run pycodestyle src/xss_utils tests manage.py
 	DJANGO_SETTINGS_MODULE=test_settings PYTHONPATH=$(CURDIR) uv run pydocstyle src/xss_utils tests manage.py
-	DJANGO_SETTINGS_MODULE=test_settings PYTHONPATH=$(CURDIR) uv run isort --check-only --diff tests test_utils src/xss_utils manage.py test_settings.py
+	DJANGO_SETTINGS_MODULE=test_settings PYTHONPATH=$(CURDIR) uv run isort --check-only --diff tests tests_utils src/xss_utils manage.py test_settings.py
 	$(MAKE) selfcheck
 
 requirements: ## install development environment requirements
