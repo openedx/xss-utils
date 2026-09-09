@@ -1,0 +1,203 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools-scm>=8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xss-utils"
+dynamic = ["version"]
+description = "Utility functions to prevent possible XSS attack on django/mako templates"
+readme = "README.rst"
+license = "AGPL-3.0"
+license-files = ["LICENSE"]
+authors = [
+    {name = "Open edX Project", email = "oscm@openedx.org"},
+]
+requires-python = ">=3.12"
+keywords = ["Django", "edx"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Framework :: Django",
+    "Framework :: Django :: 4.2",
+    "Framework :: Django :: 5.2",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "Django>=4.2",
+]
+
+[project.urls]
+Homepage = "https://github.com/openedx/xss-utils"
+
+[tool.setuptools_scm]
+version_scheme = "only-version"
+local_scheme = "no-local-version"
+fallback_version = "0.0.0"
+
+[tool.setuptools]
+include-package-data = true
+# Package lives in src/ but is installed without the src prefix,
+# e.g. src/xss_utils/ is installed as xss_utils.
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.exclude-package-data]
+"*" = ["tests*", "*.tests*", "spec*", "*.spec*"]
+
+[tool.coverage.run]
+branch = true
+source = ["src/xss_utils"]
+omit = [
+    "*/tests/*",
+    "*/migrations/*",
+    "*/__pycache__/*",
+    "*/settings.py",
+]
+
+[tool.coverage.report]
+show_missing = true
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+]
+
+[tool.coverage.html]
+directory = "htmlcov"
+
+[tool.isort]
+line_length = 120
+indent = "    "
+multi_line_output = 3
+
+[tool.pydocstyle]
+# D101 = Missing docstring in public class
+# D200 = One-line docstring should fit on one line with quotes
+# D203 = 1 blank line required before class docstring
+# D212 = Multi-line docstring summary should start at the first line
+# D215 = Section underline is over-indented (numpy style)
+# D404 = First word of the docstring should not be This (numpy style)
+# D405 = Section name should be properly capitalized (numpy style)
+# D406 = Section name should end with a newline (numpy style)
+# D407 = Missing dashed underline after section (numpy style)
+# D408 = Section underline should be in the line following the section's name (numpy style)
+# D409 = Section underline should match the length of its name (numpy style)
+# D410 = Missing blank line after section (numpy style)
+# D411 = Missing blank line before section (numpy style)
+# D412 = No blank lines allowed between a section header and its content (numpy style)
+# D413 = Missing blank line after last section (numpy style)
+# D414 = Section has no content (numpy style)
+ignore = "D101,D200,D203,D212,D215,D404,D405,D406,D407,D408,D409,D410,D411,D412,D413,D414"
+match-dir = "(?!migrations)"
+
+[tool.doc8]
+max-line-length = 120
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "test_settings"
+addopts = ["--cov=src/xss_utils", "--cov-report=term-missing", "--cov-report=xml"]
+norecursedirs = [".*", "docs"]
+
+[dependency-groups]
+# Base test packages, no Django version pinned.
+test-base = [
+    "pytest-cov",
+    "pytest-django",
+]
+# Default test group: current default supported Django version.
+# Update the Django pin here when bumping the default; add a new group
+# (e.g. django42) to test additional Django versions side-by-side.
+test = [
+    {include-group = "test-base"},
+    "Django>=5.2,<5.3",
+]
+# Legacy Django 4.2 support.
+django42 = [
+    {include-group = "test-base"},
+    "Django>=4.2,<4.3",
+]
+quality = [
+    {include-group = "test"},
+    "edx-lint",
+    "isort",
+    "pycodestyle",
+    "pydocstyle",
+]
+doc = [
+    {include-group = "test"},
+    "build",
+    "doc8",
+    "sphinx-book-theme",
+    "readme_renderer",
+    "Sphinx",
+    "twine",
+]
+# Minimal CI group: just what's needed to invoke tox.
+ci = [
+    {include-group = "quality"},
+    {include-group = "doc"},
+    "tox",
+    "tox-uv",
+]
+dev = [
+    {include-group = "quality"},
+    {include-group = "ci"},
+    {include-group = "doc"},
+    "diff-cover",
+    "edx-i18n-tools",
+]
+
+[tool.uv]
+package = true
+# `quality`/`doc`/`ci`/`dev` all transitively include `test` (for its default
+# Django pin), so they each conflict with `django42` the same way `test`
+# does. Update this list if the include-group chain changes.
+conflicts = [
+    [
+        {group = "test"},
+        {group = "django42"},
+    ],
+    [
+        {group = "quality"},
+        {group = "django42"},
+    ],
+    [
+        {group = "doc"},
+        {group = "django42"},
+    ],
+    [
+        {group = "ci"},
+        {group = "django42"},
+    ],
+    [
+        {group = "dev"},
+        {group = "django42"},
+    ],
+]
+
+#  DO NOT EDIT constraint-dependencies DIRECTLY.
+#  This list is managed by `edx_lint write_uv_constraints`
+#  and will be overwritten the next time `make upgrade` is run.
+#  - GLOBAL constraints: edit edx_lint/files/common_constraints.txt
+#  - REPO-SPECIFIC constraints: edit [tool.edx_lint].uv_constraints in this file
+constraint-dependencies = [
+    "Django<6.0",
+    "elasticsearch<7.14.0",
+]
+
+[tool.edx_lint]
+uv_constraints = []
+
+[tool.semantic_release]
+build_command = "python -m pip install --upgrade build && SETUPTOOLS_SCM_PRETEND_VERSION=$NEW_VERSION python -m build"
+major_on_zero = false
+allow_zero_version = true
+tag_format = "v{version}"
+
