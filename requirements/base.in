@@ -1,5 +1,0 @@
-# Core requirements for using this application
-
--c constraints.txt
-
-Django>=1.11          # Web application framework

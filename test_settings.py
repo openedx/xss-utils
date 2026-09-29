@@ -56,7 +56,7 @@ TEMPLATES = [
 
 
 LOCALE_PATHS = [
-    root('xss_utils', 'conf', 'locale'),
+    root('src', 'xss_utils', 'conf', 'locale'),
 ]
 
 ROOT_URLCONF = 'xss_utils.urls'

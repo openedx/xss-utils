@@ -2,6 +2,7 @@
 __pycache__
 .pytest_cache
 venv/*
+.venv/*
 
 # C extensions
 *.so
@@ -66,9 +67,6 @@ docs/modules.rst
 docs/xss_utils.rst
 docs/xss_utils.*.rst
 
-# Private requirements
-requirements/private.in
-requirements/private.txt
 
 # Development task artifacts
 default.db
